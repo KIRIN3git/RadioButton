@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RadioGroup android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/RadioGroupA">
+        <RadioButton android:text="a1"
+                     android:id="@+id/RadioButtonA1"
+                     android:layout_height="wrap_content"
+                     android:layout_width="wrap_content">
+        </RadioButton>
+        <RadioButton android:text="a2"
+                     android:id="@+id/RadioButtonA2"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content">
+        </RadioButton>
+        <RadioButton android:text="a3"
+                     android:id="@+id/RadioButtonA3"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content">
+        </RadioButton>
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:layout_margin="10dp"
+        android:background="#bbbbbb"/>
+
+
+    <RadioGroup
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/RadioGroupB"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/btn_radiogroup_gray_background"
+        android:orientation="horizontal">
+        <RadioButton
+            android:text="日本"
+            android:id="@+id/RadioButtonB1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_radio_left_white"
+            android:textColor="@drawable/btn_radio_textcolor"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center">
+        </RadioButton>
+        <RadioButton
+            android:text="ブラジル"
+            android:id="@+id/RadioButtonB2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_radio_center_white"
+            android:textColor="@drawable/btn_radio_textcolor"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center">
+        </RadioButton>
+        <RadioButton
+            android:text="フランス"
+            android:id="@+id/RadioButtonB3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_radio_center_white"
+            android:textColor="@drawable/btn_radio_textcolor"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center">
+        </RadioButton>
+        <RadioButton
+            android:text="アメリカ"
+            android:id="@+id/RadioButtonB4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_radio_right_white"
+            android:textColor="@drawable/btn_radio_textcolor"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center">
+        </RadioButton>
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:layout_margin="10dp"
+        android:background="#bbbbbb"/>
+
+    <RadioGroup
+        android:id="@+id/RadioGroupC"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+        <!-- sytleの行を（２行）追加しています。 -->
+        <RadioButton
+            android:id="@+id/RadioButtonC1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ラジオ１"
+            android:checked="true"
+            android:layout_margin="2dp"
+            style="@style/MyRadioStyle"
+            />
+        <RadioButton
+            android:id="@+id/RadioButtonC2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ラジオ２"
+            android:layout_margin="2dp"
+            style="@style/MyRadioStyle"
+            />
+        <RadioButton
+            android:id="@+id/RadioButtonC3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ラジオ３"
+            android:layout_margin="2dp"
+            style="@style/MyRadioStyle"
+            />
+    </RadioGroup>
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- フォーカスがあたっていて、チェックされている画像 -->
+    <item
+        android:state_checked="true"
+        android:state_pressed="true"
+        android:drawable="@drawable/active_checked"
+        />
+    <!-- フォーカスがあたっていて、チェックされてない画像 -->
+    <item
+        android:state_checked="true"
+        android:drawable="@drawable/active"
+        />
+    <!-- フォーカスがあたってなくて、チェックされている画像-->
+    <item
+        android:state_checked="false"
+        android:state_pressed="true"
+        android:drawable="@drawable/non_active_checked"
+        />
+    <!-- フォーカスがあたってなくて、チェックされてない画像 -->
+    <item
+        android:state_checked="false"
+        android:drawable="@drawable/non_active"
+        />
+</selector>
