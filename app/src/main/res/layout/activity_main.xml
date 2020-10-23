@@ -41,7 +41,6 @@
         android:id="@+id/RadioGroupB"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        android:background="@drawable/btn_radiogroup_gray_background"
         android:orientation="horizontal">
         <RadioButton
             android:text="日本"
@@ -50,6 +49,7 @@
             android:layout_height="match_parent"
             android:background="@drawable/btn_radio_left_white"
             android:textColor="@drawable/btn_radio_textcolor"
+            android:layout_marginRight="30dp"
             android:layout_weight="1"
             android:button="@null"
             android:gravity="center">

@@ -66,7 +66,11 @@ public class MainActivity extends AppCompatActivity {
 		});
 
 		// 指定した ID のラジオボタンをチェックします
-		radioButton2.setChecked(true);
+		radioButton1.setChecked(true);
+//		radioButton2.setBackground(null);
+		radioButton2.setEnabled(false);
+//		radioButton2.setClickable(false);
+//		radioButton2.setTextColor(getResources().getColor(R.color.orange));
 
 		// チェックされているラジオボタンの ID を取得します
 		RadioButton radioButton = (RadioButton) findViewById(radioGroup.getCheckedRadioButtonId());
